@@ -1,4 +1,382 @@
-<div class="essentials">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sri Kanaka Mahalakshmi Generals & Xerox</title>
+
+<meta name="description"
+content="Sri Kanaka Mahalakshmi Generals & Xerox in Vatluru. Xerox, colour printing, document printing, lamination, spiral binding and general stationery services.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f7fb;
+    color:#1f2937;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#0b3d91,#1769e0);
+    color:white;
+    text-align:center;
+    padding:48px 18px 42px;
+}
+
+.logo{
+    width:78px;
+    height:78px;
+    margin:0 auto 16px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+header h1{
+    font-size:32px;
+    line-height:1.25;
+    margin-bottom:12px;
+}
+
+header p{
+    font-size:17px;
+}
+
+/* MAIN */
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 18px;
+}
+
+.section-title{
+    text-align:center;
+    color:#1455b8;
+    font-size:27px;
+    margin-bottom:25px;
+}
+
+/* CARDS */
+
+.services,
+.essential-grid,
+.price-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+}
+
+.service,
+.essential,
+.price-card{
+    background:white;
+    padding:25px 15px;
+    text-align:center;
+    border-radius:17px;
+    box-shadow:0 6px 20px rgba(0,0,0,.07);
+    border:1px solid #edf0f5;
+}
+
+.service-icon,
+.essential-icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.service h3,
+.essential h3{
+    font-size:17px;
+}
+
+/* ABOUT */
+
+.about{
+    margin-top:45px;
+    background:white;
+    padding:30px 22px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,.07);
+}
+
+.about p{
+    max-width:720px;
+    margin:auto;
+    color:#555;
+}
+
+/* ESSENTIALS */
+
+.essentials{
+    margin-top:45px;
+}
+
+/* PRICE */
+
+.prices{
+    margin-top:45px;
+}
+
+.price-card{
+    padding:22px 15px;
+}
+
+.price-card h3{
+    color:#1455b8;
+    margin-bottom:8px;
+}
+
+.price-card p{
+    color:#555;
+}
+
+/* HOURS */
+
+.hours{
+    margin-top:45px;
+    background:white;
+    padding:30px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,.07);
+}
+
+.hours-box{
+    max-width:500px;
+    margin:auto;
+    background:#f3f7ff;
+    padding:20px;
+    border-radius:14px;
+}
+
+.hours-box p{
+    margin:7px 0;
+}
+
+/* WHATSAPP */
+
+.highlight{
+    margin-top:45px;
+    background:linear-gradient(135deg,#e8f1ff,#f4f8ff);
+    padding:28px 18px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid #dbe8ff;
+}
+
+.highlight h2{
+    color:#1455b8;
+    margin-bottom:8px;
+}
+
+.highlight p{
+    margin-bottom:18px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    padding:13px 22px;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    margin:5px;
+}
+
+.whatsapp{
+    background:#20c968;
+}
+
+.call{
+    background:#16a34a;
+}
+
+.maps{
+    background:#e53935;
+}
+
+.blue{
+    background:#1769e0;
+}
+
+/* CONTACT */
+
+.contact{
+    margin-top:45px;
+    background:white;
+    padding:32px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 6px 22px rgba(0,0,0,.08);
+}
+
+.contact-info{
+    margin:18px 0;
+    font-size:17px;
+}
+
+.contact-info div{
+    margin:8px 0;
+}
+
+/* PHOTO */
+
+.photo-section{
+    margin-top:45px;
+    background:white;
+    padding:30px 20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,.07);
+}
+
+.photo-placeholder{
+    max-width:650px;
+    margin:auto;
+    padding:45px 20px;
+    border:2px dashed #b9c9e8;
+    border-radius:15px;
+    background:#f7faff;
+}
+
+.photo-placeholder p{
+    color:#666;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:20px;
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:28px 18px;
+}
+
+footer p{
+    margin:4px 0;
+    font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    header{
+        padding:40px 15px;
+    }
+
+    header h1{
+        font-size:27px;
+    }
+
+    header p{
+        font-size:15px;
+    }
+
+    .container{
+        padding:32px 15px;
+    }
+
+    .section-title{
+        font-size:24px;
+    }
+
+    .services,
+    .essential-grid,
+    .price-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        display:block;
+        width:90%;
+        max-width:310px;
+        margin:10px auto;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🏪</div>
+
+<h1>
+Sri Kanaka Mahalakshmi<br>
+Generals & Xerox
+</h1>
+
+<p>
+Your Trusted Local Xerox & Printing Service in Vatluru
+</p>
+
+</header>
+
+
+<main class="container">
+
+<!-- SERVICES -->
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+
+<div class="service">
+<div class="service-icon">📄</div>
+<h3>Xerox / Photocopy</h3>
+</div>
+
+<div class="service">
+<div class="service-icon">🖨️</div>
+<h3>Colour Printing</h3>
+</div>
+
+<div class="service">
+<div class="service-icon">📑</div>
+<h3>Document Printing</h3>
+</div>
+
+<div class="service">
+<div class="service-icon">🪪</div>
+<h3>Lamination</h3>
+</div>
+
+<div class="service">
+<div class="service-icon">📚</div>
+<h3>Spiral Binding</h3>
+</div>
+
+</div>
+
+
+<!-- SHOP ESSENTIALS -->
+
+<section class="essentials">
 
 <h2 class="section-title">Shop Essentials</h2>
 
@@ -26,4 +404,169 @@
 
 </div>
 
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<h2 class="section-title">About Our Shop</h2>
+
+<p>
+Sri Kanaka Mahalakshmi Generals & Xerox provides convenient
+printing, photocopy and document services in Vatluru.
+We also offer lamination, spiral binding and general
+stationery items for your everyday needs.
+</p>
+
+</section>
+
+
+<!-- PRICE LIST -->
+
+<section class="prices">
+
+<h2 class="section-title">Services & Price List</h2>
+
+<div class="price-grid">
+
+<div class="price-card">
+<h3>📄 Xerox</h3>
+<p>Contact us for latest price</p>
 </div>
+
+<div class="price-card">
+<h3>🖨️ Colour Printing</h3>
+<p>Contact us for latest price</p>
+</div>
+
+<div class="price-card">
+<h3>🪪 Lamination</h3>
+<p>Contact us for latest price</p>
+</div>
+
+<div class="price-card">
+<h3>📚 Spiral Binding</h3>
+<p>Contact us for latest price</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- OPENING HOURS -->
+
+<section class="hours">
+
+<h2 class="section-title">Opening Hours</h2>
+
+<div class="hours-box">
+
+<p>🕐 Shop timings may vary.</p>
+
+<p>
+Please call us for today's opening hours.
+</p>
+
+<a class="btn call"
+href="tel:+919533957505">
+📞 Call for Timings
+</a>
+
+</div>
+
+</section>
+
+
+<!-- WHATSAPP -->
+
+<section class="highlight">
+
+<h2>📱 Send Your Documents on WhatsApp</h2>
+
+<p>
+Send your documents to us on WhatsApp and visit our shop
+when they are ready.
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/919533957505?text=Hello%20Sri%20Kanaka%20Mahalakshmi%20Generals%20%26%20Xerox%2C%20I%20want%20to%20send%20a%20document.">
+
+💬 Send Documents
+
+</a>
+
+</section>
+
+
+<!-- SHOP PHOTO -->
+
+<section class="photo-section">
+
+<h2 class="section-title">Our Shop</h2>
+
+<div class="photo-placeholder">
+
+<p>📷 Shop photo will be added here</p>
+
+<p>
+Upload your shop front photo and we can add it
+to this section.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact-info">
+
+<div>📍 <strong>Vatluru</strong></div>
+
+<div>📞 <strong>9533957505</strong></div>
+
+</div>
+
+<a class="btn call"
+href="tel:+919533957505">
+📞 Call Now
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/919533957505">
+💬 WhatsApp Us
+</a>
+
+<a class="btn maps"
+href="https://maps.app.goo.gl/jtuemhokGWnF6KYNA?g_st=ac"
+target="_blank">
+📍 Get Directions
+</a>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>
+© 2026 Sri Kanaka Mahalakshmi Generals & Xerox
+</p>
+
+<p>
+Vatluru • Quality Service • Affordable Prices
+</p>
+
+</footer>
+
+</body>
+</html>
