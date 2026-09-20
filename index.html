@@ -3,570 +3,368 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sri Kanaka Mahalakshmi Generals & Xerox</title>
-
-<meta name="description"
-content="Sri Kanaka Mahalakshmi Generals & Xerox in Vatluru. Xerox, colour printing, document printing, lamination, spiral binding and general stationery services.">
+<title>Sri Kanaka Mahalakshmi Generals & Xerox | Vatluru</title>
+<meta name="description" content="Sri Kanaka Mahalakshmi Generals & Xerox in Vatluru. Xerox, colour printing, document printing, lamination, spiral binding and stationery services.">
+<meta name="theme-color" content="#0b5cff">
+<meta property="og:title" content="Sri Kanaka Mahalakshmi Generals & Xerox">
+<meta property="og:description" content="Xerox, colour printing, document printing, lamination, spiral binding and general stationery in Vatluru.">
+<meta property="og:type" content="website">
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5f7fb;
-    color:#1f2937;
-    line-height:1.6;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f7fb;color:#172033;line-height:1.6;
+  padding-bottom:74px
 }
-
-/* HEADER */
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
 
 header{
-    background:linear-gradient(135deg,#0b3d91,#1769e0);
-    color:white;
-    text-align:center;
-    padding:48px 18px 42px;
+  position:sticky;top:0;z-index:1000;
+  background:linear-gradient(135deg,#0757d9,#0b8df0);
+  color:#fff;box-shadow:0 4px 18px #0002
 }
-
-.logo{
-    width:78px;
-    height:78px;
-    margin:0 auto 16px;
-    border-radius:50%;
-    background:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    box-shadow:0 8px 25px rgba(0,0,0,.2);
+.nav{
+  min-height:72px;display:flex;align-items:center;
+  justify-content:space-between;gap:18px
 }
-
-header h1{
-    font-size:32px;
-    line-height:1.25;
-    margin-bottom:12px;
+.brand{font-weight:800;font-size:18px;line-height:1.2}
+.brand small{display:block;font-size:12px;font-weight:500;opacity:.9;margin-top:3px}
+.navlinks{display:flex;gap:18px;font-size:14px;font-weight:700}
+.navlinks a{opacity:.95}
+.hero{
+  background:
+    radial-gradient(circle at 85% 20%,#ffffff30 0 80px,transparent 81px),
+    linear-gradient(135deg,#0757d9,#0b8df0 55%,#19a7f4);
+  color:#fff;padding:72px 0 58px
 }
-
-header p{
-    font-size:17px;
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:center}
+.badge{
+  display:inline-block;background:#ffffff20;border:1px solid #ffffff55;
+  padding:7px 13px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:15px
 }
-
-/* MAIN */
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 18px;
-}
-
-.section-title{
-    text-align:center;
-    color:#1455b8;
-    font-size:27px;
-    margin-bottom:25px;
-}
-
-/* CARDS */
-
-.services,
-.essential-grid,
-.price-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:18px;
-}
-
-.service,
-.essential,
-.price-card{
-    background:white;
-    padding:25px 15px;
-    text-align:center;
-    border-radius:17px;
-    box-shadow:0 6px 20px rgba(0,0,0,.07);
-    border:1px solid #edf0f5;
-}
-
-.service-icon,
-.essential-icon{
-    font-size:40px;
-    margin-bottom:10px;
-}
-
-.service h3,
-.essential h3{
-    font-size:17px;
-}
-
-/* ABOUT */
-
-.about{
-    margin-top:45px;
-    background:white;
-    padding:30px 22px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 6px 20px rgba(0,0,0,.07);
-}
-
-.about p{
-    max-width:720px;
-    margin:auto;
-    color:#555;
-}
-
-/* ESSENTIALS */
-
-.essentials{
-    margin-top:45px;
-}
-
-/* PRICE */
-
-.prices{
-    margin-top:45px;
-}
-
-.price-card{
-    padding:22px 15px;
-}
-
-.price-card h3{
-    color:#1455b8;
-    margin-bottom:8px;
-}
-
-.price-card p{
-    color:#555;
-}
-
-/* HOURS */
-
-.hours{
-    margin-top:45px;
-    background:white;
-    padding:30px 20px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 6px 20px rgba(0,0,0,.07);
-}
-
-.hours-box{
-    max-width:500px;
-    margin:auto;
-    background:#f3f7ff;
-    padding:20px;
-    border-radius:14px;
-}
-
-.hours-box p{
-    margin:7px 0;
-}
-
-/* WHATSAPP */
-
-.highlight{
-    margin-top:45px;
-    background:linear-gradient(135deg,#e8f1ff,#f4f8ff);
-    padding:28px 18px;
-    border-radius:20px;
-    text-align:center;
-    border:1px solid #dbe8ff;
-}
-
-.highlight h2{
-    color:#1455b8;
-    margin-bottom:8px;
-}
-
-.highlight p{
-    margin-bottom:18px;
-}
-
-/* BUTTON */
-
+.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.05;margin-bottom:15px}
+.hero p{font-size:18px;max-width:680px;opacity:.95}
+.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:25px}
 .btn{
-    display:inline-block;
-    padding:13px 22px;
-    border-radius:10px;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    margin:5px;
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 18px;border-radius:12px;font-weight:800;border:1px solid transparent
 }
+.btn-white{background:#fff;color:#0757d9}
+.btn-green{background:#18b96f;color:#fff}
+.btn-outline{border-color:#ffffff88;color:#fff;background:#ffffff12}
 
-.whatsapp{
-    background:#20c968;
+.hero-card{
+  background:#ffffff16;border:1px solid #ffffff45;border-radius:22px;
+  padding:26px;backdrop-filter:blur(8px);box-shadow:0 20px 50px #003c8030
 }
-
-.call{
-    background:#16a34a;
+.hero-card .shop-icon{
+  width:74px;height:74px;border-radius:18px;background:#fff;color:#0757d9;
+  display:grid;place-items:center;font-size:38px;margin-bottom:16px
 }
+.hero-card h2{font-size:23px;margin-bottom:8px}
+.hero-card p{font-size:14px}
 
-.maps{
-    background:#e53935;
+.trust{background:#fff;border-bottom:1px solid #e6eaf0}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.trust-item{padding:17px;text-align:center;font-weight:800;color:#33415c}
+.trust-item span{display:block;font-size:12px;color:#778198;font-weight:500;margin-top:2px}
+
+section{padding:62px 0}
+.section-head{text-align:center;margin-bottom:30px}
+.section-head h2{font-size:32px;margin-bottom:7px;color:#16233a}
+.section-head p{color:#667085}
+
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.card{
+  background:#fff;border:1px solid #e7ebf2;border-radius:18px;padding:22px;
+  box-shadow:0 8px 25px #17345a0d;transition:.2s
 }
-
-.blue{
-    background:#1769e0;
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px #17345a18}
+.icon{
+  width:50px;height:50px;border-radius:14px;background:#e9f2ff;color:#0757d9;
+  display:grid;place-items:center;font-size:24px;margin-bottom:14px
 }
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{font-size:13px;color:#697586}
 
-/* CONTACT */
-
-.contact{
-    margin-top:45px;
-    background:white;
-    padding:32px 20px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 6px 22px rgba(0,0,0,.08);
+.essentials{background:#fff}
+.essential-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.essential{
+  border:1px solid #e7ebf2;border-radius:16px;padding:20px;background:#f9fbff
 }
+.essential b{display:block;margin-bottom:5px}
+.essential span{font-size:13px;color:#697586}
 
-.contact-info{
-    margin:18px 0;
-    font-size:17px;
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.about-box{
+  background:#fff;border-radius:22px;padding:30px;border:1px solid #e7ebf2;
+  box-shadow:0 8px 25px #17345a0d
 }
-
-.contact-info div{
-    margin:8px 0;
+.about-box h3{font-size:25px;margin-bottom:12px}
+.about-box p{color:#5f6b7d;margin-bottom:12px}
+.points{display:grid;gap:10px;margin-top:15px}
+.point{background:#f5f8ff;padding:12px 14px;border-radius:12px;font-weight:700}
+.storefront{
+  min-height:100%;border-radius:22px;padding:28px;color:#fff;
+  background:linear-gradient(145deg,#102b57,#0757d9);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center
 }
-
-/* PHOTO */
-
-.photo-section{
-    margin-top:45px;
-    background:white;
-    padding:30px 20px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 6px 20px rgba(0,0,0,.07);
+.shop-building{
+  width:90%;max-width:360px;background:#fff;border-radius:12px 12px 5px 5px;
+  padding:12px;color:#14223a;box-shadow:0 16px 35px #0003
 }
+.sign{background:#0757d9;color:#fff;border-radius:8px;padding:12px;font-weight:900;font-size:15px}
+.windows{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.window{height:70px;background:#dff2ff;border:4px solid #17345a;border-radius:5px}
+.storefront p{margin-top:16px;opacity:.9}
 
-.photo-placeholder{
-    max-width:650px;
-    margin:auto;
-    padding:45px 20px;
-    border:2px dashed #b9c9e8;
-    border-radius:15px;
-    background:#f7faff;
+.price-wrap{overflow:auto;background:#fff;border-radius:18px;border:1px solid #e7ebf2}
+table{width:100%;border-collapse:collapse;min-width:620px}
+th,td{padding:15px 17px;border-bottom:1px solid #edf0f5;text-align:left}
+th{background:#f2f6fc;color:#1c3152}
+td:last-child{font-weight:700;color:#0757d9}
+.note{text-align:center;color:#6b7280;font-size:13px;margin-top:12px}
+
+.order{
+  background:linear-gradient(135deg,#062f78,#087ee6);color:#fff;border-radius:26px;
+  padding:38px;text-align:center;box-shadow:0 15px 40px #0757d933
 }
+.order h2{font-size:31px;margin-bottom:8px}
+.order p{opacity:.9;max-width:650px;margin:auto}
+.order .btn{margin-top:20px}
 
-.photo-placeholder p{
-    color:#666;
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{
+  background:#fff;border:1px solid #e7ebf2;border-radius:20px;padding:25px
 }
-
-/* FOOTER */
-
-footer{
-    margin-top:20px;
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:28px 18px;
+.contact-row{display:flex;gap:13px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #edf0f5}
+.contact-row:last-child{border-bottom:0}
+.contact-row strong{display:block}
+.contact-row span{color:#687386;font-size:14px}
+.contact-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.map-box{
+  min-height:100%;border-radius:20px;background:#eaf3ff;border:1px solid #d7e6ff;
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:30px
 }
+.map-box h3{font-size:24px;margin-bottom:8px}
+.map-box p{color:#687386;margin-bottom:16px}
 
-footer p{
-    margin:4px 0;
-    font-size:14px;
+footer{background:#101a2d;color:#dce5f5;padding:28px 0;text-align:center}
+footer p{font-size:13px;opacity:.8;margin-top:5px}
+
+.bottom-nav{
+  position:fixed;bottom:0;left:0;right:0;z-index:2000;
+  background:#fff;border-top:1px solid #dfe4ec;display:grid;grid-template-columns:repeat(5,1fr);
+  box-shadow:0 -5px 18px #0001
 }
+.bottom-nav a{padding:9px 3px;text-align:center;font-size:11px;font-weight:800;color:#536078}
+.bottom-nav b{display:block;font-size:19px;line-height:21px}
+.bottom-nav a:nth-child(3){color:#12a766}
 
-/* MOBILE */
-
-@media(max-width:600px){
-
-    header{
-        padding:40px 15px;
-    }
-
-    header h1{
-        font-size:27px;
-    }
-
-    header p{
-        font-size:15px;
-    }
-
-    .container{
-        padding:32px 15px;
-    }
-
-    .section-title{
-        font-size:24px;
-    }
-
-    .services,
-    .essential-grid,
-    .price-grid{
-        grid-template-columns:1fr;
-    }
-
-    .btn{
-        display:block;
-        width:90%;
-        max-width:310px;
-        margin:10px auto;
-    }
+@media(max-width:900px){
+  .navlinks{display:none}
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .essential-grid{grid-template-columns:repeat(2,1fr)}
+  .hero{padding:52px 0 45px}
 }
-
+@media(max-width:520px){
+  .container{width:94%}
+  section{padding:48px 0}
+  .hero h1{font-size:37px}
+  .hero p{font-size:16px}
+  .cards{grid-template-columns:1fr}
+  .essential-grid{grid-template-columns:1fr}
+  .trust-grid{grid-template-columns:1fr}
+  .trust-item{padding:12px;border-bottom:1px solid #edf0f5}
+  .order{padding:28px 20px}
+  .order h2{font-size:25px}
+}
 </style>
 </head>
 
-<body>
+<body id="home">
 
 <header>
-
-<div class="logo">🏪</div>
-
-<h1>
-Sri Kanaka Mahalakshmi<br>
-Generals & Xerox
-</h1>
-
-<p>
-Your Trusted Local Xerox & Printing Service in Vatluru
-</p>
-
+  <div class="container nav">
+    <a href="#home" class="brand">
+      Sri Kanaka Mahalakshmi<br>Generals & Xerox
+      <small>Vatluru</small>
+    </a>
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#prices">Prices</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">📍 Serving Vatluru</span>
+      <h1>Your Local Xerox & Printing Shop</h1>
+      <p>Fast and convenient Xerox, colour printing, document printing, lamination, spiral binding and stationery services.</p>
+      <div class="actions">
+        <a class="btn btn-white" href="#services">View Services</a>
+        <a class="btn btn-green" href="https://wa.me/919533957505?text=Hello%20Sri%20Kanaka%20Mahalakshmi%20Generals%20%26%20Xerox" target="_blank">💬 WhatsApp</a>
+        <a class="btn btn-outline" href="tel:+919533957505">📞 Call Now</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="shop-icon">🏪</div>
+      <h2>Sri Kanaka Mahalakshmi</h2>
+      <p>Generals & Xerox — your convenient local place for printing, Xerox and essential stationery needs.</p>
+    </div>
+  </div>
+</section>
 
-<main class="container">
-
-<!-- SERVICES -->
-
-<h2 class="section-title">Our Services</h2>
-
-<div class="services">
-
-<div class="service">
-<div class="service-icon">📄</div>
-<h3>Xerox / Photocopy</h3>
+<div class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item">📍 Vatluru<span>Local service</span></div>
+    <div class="trust-item">⚡ Quick Service<span>Convenient printing & Xerox</span></div>
+    <div class="trust-item">💬 WhatsApp<span>Send documents easily</span></div>
+  </div>
 </div>
 
-<div class="service">
-<div class="service-icon">🖨️</div>
-<h3>Colour Printing</h3>
-</div>
-
-<div class="service">
-<div class="service-icon">📑</div>
-<h3>Document Printing</h3>
-</div>
-
-<div class="service">
-<div class="service-icon">🪪</div>
-<h3>Lamination</h3>
-</div>
-
-<div class="service">
-<div class="service-icon">📚</div>
-<h3>Spiral Binding</h3>
-</div>
-
-</div>
-
-
-<!-- SHOP ESSENTIALS -->
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <h2>Our Services</h2>
+      <p>Useful services for students, families, offices and local customers.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">📄</div><h3>Xerox / Photocopy</h3><p>Quick document photocopy service.</p></div>
+      <div class="card"><div class="icon">🎨</div><h3>Colour Printing</h3><p>Colour prints for documents and materials.</p></div>
+      <div class="card"><div class="icon">🖨️</div><h3>Document Printing</h3><p>Print your files and documents.</p></div>
+      <div class="card"><div class="icon">📑</div><h3>Lamination</h3><p>Protect important documents and cards.</p></div>
+      <div class="card"><div class="icon">📚</div><h3>Spiral Binding</h3><p>Neat binding for projects and documents.</p></div>
+    </div>
+  </div>
+</section>
 
 <section class="essentials">
-
-<h2 class="section-title">Shop Essentials</h2>
-
-<div class="essential-grid">
-
-<div class="essential">
-<div class="essential-icon">✏️</div>
-<h3>Stationery & General Items</h3>
-</div>
-
-<div class="essential">
-<div class="essential-icon">📓</div>
-<h3>Notebooks</h3>
-</div>
-
-<div class="essential">
-<div class="essential-icon">📁</div>
-<h3>Files & Folders</h3>
-</div>
-
-<div class="essential">
-<div class="essential-icon">📝</div>
-<h3>Record Sheets</h3>
-</div>
-
-</div>
-
+  <div class="container">
+    <div class="section-head">
+      <h2>Shop Essentials</h2>
+      <p>Everyday stationery and general items in one convenient place.</p>
+    </div>
+    <div class="essential-grid">
+      <div class="essential">✏️ <b>Stationery & General Items</b><span>Useful everyday supplies.</span></div>
+      <div class="essential">📓 <b>Notebooks</b><span>For school, college and daily use.</span></div>
+      <div class="essential">📁 <b>Files & Folders</b><span>Keep documents organized.</span></div>
+      <div class="essential">📋 <b>Record Sheets</b><span>Useful sheets for academic and office work.</span></div>
+    </div>
+  </div>
 </section>
 
-
-<!-- ABOUT -->
-
-<section class="about">
-
-<h2 class="section-title">About Our Shop</h2>
-
-<p>
-Sri Kanaka Mahalakshmi Generals & Xerox provides convenient
-printing, photocopy and document services in Vatluru.
-We also offer lamination, spiral binding and general
-stationery items for your everyday needs.
-</p>
-
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <h2>About Our Shop</h2>
+      <p>A simple local shop for your everyday document and stationery needs.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-box">
+        <h3>Why Choose Our Shop?</h3>
+        <p>We provide commonly needed Xerox, printing, document finishing and stationery services from one convenient location in Vatluru.</p>
+        <div class="points">
+          <div class="point">⚡ Quick & convenient service</div>
+          <div class="point">💬 WhatsApp document support</div>
+          <div class="point">🛍️ One-stop shop for essentials</div>
+        </div>
+      </div>
+      <div class="storefront">
+        <div class="shop-building">
+          <div class="sign">SRI KANAKA MAHALAKSHMI<br>GENERALS & XEROX</div>
+          <div class="windows"><div class="window"></div><div class="window"></div></div>
+        </div>
+        <p>Our Shop • Vatluru</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<!-- PRICE LIST -->
-
-<section class="prices">
-
-<h2 class="section-title">Services & Price List</h2>
-
-<div class="price-grid">
-
-<div class="price-card">
-<h3>📄 Xerox</h3>
-<p>Contact us for latest price</p>
-</div>
-
-<div class="price-card">
-<h3>🖨️ Colour Printing</h3>
-<p>Contact us for latest price</p>
-</div>
-
-<div class="price-card">
-<h3>🪪 Lamination</h3>
-<p>Contact us for latest price</p>
-</div>
-
-<div class="price-card">
-<h3>📚 Spiral Binding</h3>
-<p>Contact us for latest price</p>
-</div>
-
-</div>
-
+<section id="prices">
+  <div class="container">
+    <div class="section-head">
+      <h2>Services & Price List</h2>
+      <p>Prices can vary by paper size, quantity and service. Please confirm the latest price before ordering.</p>
+    </div>
+    <div class="price-wrap">
+      <table>
+        <thead><tr><th>Service</th><th>Details</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td>Xerox / Photocopy</td><td>B/W & other options</td><td>Contact us</td></tr>
+          <tr><td>Colour Printing</td><td>Based on paper & quantity</td><td>Contact us</td></tr>
+          <tr><td>Document Printing</td><td>PDF / document files</td><td>Contact us</td></tr>
+          <tr><td>Lamination</td><td>Size dependent</td><td>Contact us</td></tr>
+          <tr><td>Spiral Binding</td><td>Project / document binding</td><td>Contact us</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Call or WhatsApp us for the current price.</p>
+  </div>
 </section>
 
-
-<!-- OPENING HOURS -->
-
-<section class="hours">
-
-<h2 class="section-title">Opening Hours</h2>
-
-<div class="hours-box">
-
-<p>🕐 Shop timings may vary.</p>
-
-<p>
-Please call us for today's opening hours.
-</p>
-
-<a class="btn call"
-href="tel:+919533957505">
-📞 Call for Timings
-</a>
-
-</div>
-
+<section>
+  <div class="container">
+    <div class="order">
+      <h2>Send Your Documents on WhatsApp</h2>
+      <p>Have a document ready on your phone? Send it through WhatsApp and contact the shop for printing details.</p>
+      <a class="btn btn-green" href="https://wa.me/919533957505?text=Hello%2C%20I%20want%20to%20send%20a%20document%20for%20printing." target="_blank">💬 Send on WhatsApp</a>
+    </div>
+  </div>
 </section>
 
-
-<!-- WHATSAPP -->
-
-<section class="highlight">
-
-<h2>📱 Send Your Documents on WhatsApp</h2>
-
-<p>
-Send your documents to us on WhatsApp and visit our shop
-when they are ready.
-</p>
-
-<a class="btn whatsapp"
-href="https://wa.me/919533957505?text=Hello%20Sri%20Kanaka%20Mahalakshmi%20Generals%20%26%20Xerox%2C%20I%20want%20to%20send%20a%20document.">
-
-💬 Send Documents
-
-</a>
-
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contact Us</h2>
+      <p>Get in touch or find our shop in Vatluru.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-row"><div>📍</div><div><strong>Location</strong><span>Vatluru</span></div></div>
+        <div class="contact-row"><div>📞</div><div><strong>Phone</strong><span>9533957505</span></div></div>
+        <div class="contact-row"><div>💬</div><div><strong>WhatsApp</strong><span>Send your documents and enquiries.</span></div></div>
+        <div class="contact-buttons">
+          <a class="btn btn-green" href="https://wa.me/919533957505" target="_blank">WhatsApp</a>
+          <a class="btn" style="background:#eaf2ff;color:#0757d9" href="tel:+919533957505">Call Now</a>
+        </div>
+      </div>
+      <div class="map-box">
+        <div>
+          <h3>📍 Find Our Shop</h3>
+          <p>Open the location in Google Maps for directions.</p>
+          <a class="btn" style="background:#0757d9;color:#fff" href="https://maps.app.goo.gl/jtuemhokGWnF6KYNA?g_st=ac" target="_blank">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-<!-- SHOP PHOTO -->
-
-<section class="photo-section">
-
-<h2 class="section-title">Our Shop</h2>
-
-<div class="photo-placeholder">
-
-<p>📷 Shop photo will be added here</p>
-
-<p>
-Upload your shop front photo and we can add it
-to this section.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="contact">
-
-<h2 class="section-title">Contact Us</h2>
-
-<div class="contact-info">
-
-<div>📍 <strong>Vatluru</strong></div>
-
-<div>📞 <strong>9533957505</strong></div>
-
-</div>
-
-<a class="btn call"
-href="tel:+919533957505">
-📞 Call Now
-</a>
-
-<a class="btn whatsapp"
-href="https://wa.me/919533957505">
-💬 WhatsApp Us
-</a>
-
-<a class="btn maps"
-href="https://maps.app.goo.gl/jtuemhokGWnF6KYNA?g_st=ac"
-target="_blank">
-📍 Get Directions
-</a>
-
-</section>
-
 </main>
 
-
 <footer>
-
-<p>
-© 2026 Sri Kanaka Mahalakshmi Generals & Xerox
-</p>
-
-<p>
-Vatluru • Quality Service • Affordable Prices
-</p>
-
+  <div class="container">
+    <strong>Sri Kanaka Mahalakshmi Generals & Xerox</strong>
+    <p>Vatluru • Xerox • Printing • Lamination • Spiral Binding • Stationery</p>
+    <p>© 2026 Sri Kanaka Mahalakshmi Generals & Xerox</p>
+  </div>
 </footer>
+
+<nav class="bottom-nav">
+  <a href="#home"><b>⌂</b>Home</a>
+  <a href="#services"><b>▦</b>Services</a>
+  <a href="https://wa.me/919533957505" target="_blank"><b>💬</b>WhatsApp</a>
+  <a href="tel:+919533957505"><b>☎</b>Call</a>
+  <a href="https://maps.app.goo.gl/jtuemhokGWnF6KYNA?g_st=ac" target="_blank"><b>📍</b>Map</a>
+</nav>
 
 </body>
 </html>
